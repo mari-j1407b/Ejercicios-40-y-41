@@ -13,6 +13,7 @@ Crea una clase hija FacturaConImpuesto que herede de Factura y agregue:
 1. usar super().total() (ya con descuento aplicado),
 2. luego sumar IVA sobre ese monto.
 Nota: si el descuento es inválido (<0 o >100) debe ignorarse (o ajustar a límites).
+
 Ejercicio 41: Nómina con horas extra y comisión
 Crea una clase base Empleado con:
 • nombre
