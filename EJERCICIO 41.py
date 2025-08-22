@@ -7,8 +7,8 @@ class Empleado:
         self.nombre = nombre
         self.salario_base = salario_base
         self.pago_por_hora_etra = pago_hora_extra  
-    
-    def calcular_pago(self, numero_horas_extra):
+    #                                                                       v<< En caso el uusairio no ingrese horas extra
+    def calcular_pago(self, numero_horas_extra): # (self, numero_horas_extra=0):
         
         if numero_horas_extra < 0:     # horas extra no  deben ser negativas
             numero_horas_extra = 0
@@ -17,6 +17,8 @@ class Empleado:
         pago_horas_etra = numero_horas_extra * self.pago_por_hora_etra  
         pago_total_mensual = self.salario_base + pago_horas_etra
         return pago_total_mensual
+    
+    # acá también se puede añadir un metodo mostrar_ pago que imprima el pago total
 
 
 class EmpleadoComision(Empleado):
